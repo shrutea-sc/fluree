@@ -50,7 +50,7 @@ my/ledger
 ```
 ### Adding Predicates
 
-``` flureeql
+``` json
 [
   {
     "_id": "_predicate",
