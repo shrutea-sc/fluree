@@ -17,3 +17,23 @@ update using subject id
   }
 ]
 ```
+## Delete
+### Delete a subject
+``` json
+[
+  {
+    "_id": ["person/handle", "zsmith"],
+    "_action": "delete"
+  }
+]
+```
+
+### delete a predicate
+``` json
+[
+  {
+    "_id": ["person/handle", "jdoe"],
+    "age": null
+  }
+]
+```
