@@ -24,7 +24,7 @@ https://fluree-releases-public.s3.amazonaws.com/fluree-[MAJOR VERSION].[MINOR VE
 my/ledger
 ```
 ### Adding a collection
-``` sql
+``` json
 [
   {
     "_id": "_collection",
