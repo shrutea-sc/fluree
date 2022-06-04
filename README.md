@@ -19,4 +19,32 @@ https://fluree-releases-public.s3.amazonaws.com/fluree-[MAJOR VERSION].[MINOR VE
 ```bash
 ./fluree_start.sh
 ```
-### create a ledger
+### creation of a ledger
+```bash
+my/ledger
+```
+### Adding a collection
+``` fluree
+[
+  {
+    "_id": "_collection",
+    "name": "person"
+  },
+  {
+    "_id": "_collection",
+    "name": "chat"
+  },
+  {
+    "_id": "_collection",
+    "name": "comment"
+  },
+  {
+    "_id": "_collection",
+    "name": "artist"
+  },
+  {
+    "_id": "_collection",
+    "name": "movie"
+  }
+]
+```
