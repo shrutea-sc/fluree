@@ -1,7 +1,7 @@
 
 # Install latest version of java
 
-sudo apt install openjdk-11-jre-headless
+'''' sudo apt install openjdk-11-jre-headless '''
 
 # Install flurry
 
