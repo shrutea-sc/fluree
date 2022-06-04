@@ -1,7 +1,8 @@
 # Fluree
 
 Fluree is an immutable graph database that, beyond performing typical modern database functions, emphasizes security, trust, provenance, privacy, and interoperability
-## Install latest version of java
+## Install latest version of java 
+it can also be created using docker and homebrew
 
 ```bash
 sudo apt install openjdk-11-jre-headless 
