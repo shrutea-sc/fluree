@@ -1,5 +1,5 @@
 # Fluree Basic Query
-## Update
+## Update Data
 ``` json
 [
   {
@@ -17,7 +17,7 @@ update using subject id
   }
 ]
 ```
-## Delete
+## Delete Data
 ### Delete a subject
 ``` json
 [
