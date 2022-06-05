@@ -35,8 +35,34 @@ Analytical query is used to answer more complicated questions about the data.
 ### Where key
 #### Three Tuple
 You define the values for one or two portions of a three-tuple when you include it in your where-array. Nulls or variables make up the sections you don't define.
-### Four Tuple
+#### Four Tuple
 Four tuples are identical to three tuples with the exception that four tuples give a data source for the subject, predicate, and object patterns.
-### Two Tuple Variable Binding
+#### Two Tuple Variable Binding
 Bind a variable to a value, including an aggregate value that has been computed. These variables can be utilised in the where-array items that follow.
-
+``` json
+{
+  "select": "?person",
+  "where": [
+    ["?handle", "jdoe"],
+    ["?person", "person/handle", "?handle"]
+  ]
+}
+```
+#### Binding map	
+Serves the same function as a two-tuple variable binding, except the syntax is different.
+#### Optional map	
+Like, three-tuples, looks for flakes (pieces of data) that match a provided pattern. However, when joining the results of this map with the queries existing resultset, will simply bind null if there is no match (a left outer join).
+#### Union map	
+The two parts of a union map are outer joined.
+#### Filter map	
+Filters the results up to that point in the query.
+``` json
+{
+  "select": ["?handle", "?num"],
+  "where": [
+    ["?person", "person/handle", "?handle"],
+    ["?person", "person/favNums", "?num"],
+    { "filter": ["(> 10 ?num)", "(= \"jdoe\" ?handle)"] }
+  ]
+}
+```
