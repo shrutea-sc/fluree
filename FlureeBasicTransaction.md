@@ -1,4 +1,4 @@
-# Fluree Basic Query
+# Fluree Basic Transactions
 ## Update Data
 ``` json
 [
