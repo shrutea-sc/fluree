@@ -25,6 +25,11 @@ Where clauses are a simple way to apply very basic filters to a query
 ```
 
 ## Analytical Query
+Analytical query is used to answer more complicated questions about the data.
 ``` json
-
+{
+  "select": ["?nums", "(avg ?nums)"],
+  "where": [["?person", "person/favNums", "?nums"]]
+}
 ```
+
