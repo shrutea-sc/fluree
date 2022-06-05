@@ -66,3 +66,17 @@ Filters the results up to that point in the query.
   ]
 }
 ```
+### Prefixes key
+If we wish to query across many Fluree ledgers, we may use the prefixes map to indicate the ledger.
+```json
+{
+  "prefixes": {
+    "ftest": "fluree/test"
+  },
+  "select": "?nums",
+  "where": [
+    ["$fdb4", ["person/handle", "zsmith"], "person/favNums", "?nums"],
+    ["ftest", ["person/handle", "zsmith"], "person/favNums", "?nums"]
+  ]
+}
+```
