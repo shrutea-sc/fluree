@@ -80,3 +80,14 @@ If we wish to query across many Fluree ledgers, we may use the prefixes map to i
   ]
 }
 ```
+### Vars key
+used to subsitute value in given query
+```json
+{
+  "select": "?handle",
+  "where": [["?person", "person/handle", "?handle"]],
+  "vars": {
+    "?handle": "dsanchez"
+  }
+}
+```
