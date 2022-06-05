@@ -38,7 +38,7 @@ you can upsert data in fluree if you have unique predicate marked
 ]
 ```
 
-### delete a predicate
+### Delete a predicate
 ``` json
 [
   {
