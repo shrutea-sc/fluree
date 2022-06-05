@@ -17,6 +17,16 @@ update using subject id
   }
 ]
 ```
+## Upsert Data
+you can upsert data in fluree if you have unique predicate marked
+``` json
+[
+  {
+    "_id": ["_predicate/name", "person/handle"],
+    "upsert": true
+  }
+]
+```
 ## Delete Data
 ### Delete a subject
 ``` json
