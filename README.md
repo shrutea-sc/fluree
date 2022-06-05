@@ -19,6 +19,7 @@ https://fluree-releases-public.s3.amazonaws.com/fluree-[MAJOR VERSION].[MINOR VE
 ```bash
 ./fluree_start.sh
 ```
+and navigate to http://localhost:8090/
 ### creation of a ledger
 ```bash
 my/ledger
