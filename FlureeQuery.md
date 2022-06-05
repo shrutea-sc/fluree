@@ -91,3 +91,22 @@ used to subsitute value in given query
   }
 }
 ```
+## Block Query
+this query is used to select all flakes from a block or a selection of blocks.
+```json
+{
+  "block": [3],
+  "prettyPrint": true
+}
+
+```
+## Advanced Query
+``` json
+{
+  "select": [
+    "handle",
+    { "comment/_person": ["*", { "_as": "comment", "_limit": 1 }] }
+  ],
+  "from": "person"
+}
+```
