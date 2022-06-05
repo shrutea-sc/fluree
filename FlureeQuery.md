@@ -32,4 +32,11 @@ Analytical query is used to answer more complicated questions about the data.
   "where": [["?person", "person/favNums", "?nums"]]
 }
 ```
+### Where key
+#### Three Tuple
+You define the values for one or two portions of a three-tuple when you include it in your where-array. Nulls or variables make up the sections you don't define.
+### Four Tuple
+Four tuples are identical to three tuples with the exception that four tuples give a data source for the subject, predicate, and object patterns.
+### Two Tuple Variable Binding
+Bind a variable to a value, including an aggregate value that has been computed. These variables can be utilised in the where-array items that follow.
 
